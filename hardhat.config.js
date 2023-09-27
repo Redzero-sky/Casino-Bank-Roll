@@ -12,6 +12,10 @@ module.exports = {
    defaultNetwork: "bsctestnet",
    networks: {
       hardhat: hardhatConfig,
+      ethereum: {
+         url: "https://mainnet.infura.io/v3/" + INFURA_ID,
+         accounts: [`0x${PRIVATE_KEY}`]
+      },
       goerli: {
          url: "https://goerli.infura.io/v3/" + INFURA_ID,
          accounts: [`0x${PRIVATE_KEY}`]
